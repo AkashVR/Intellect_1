@@ -1,0 +1,46 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title id="header">
+      INTELLECT
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-label>Have Account ?</ion-label>
+      <ion-button  [routerLink]="['/login']">login</ion-button>
+    </ion-buttons>
+ 
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content>
+  <!-- <div class="ion-padding ion-text-center">
+  <div class="title">
+    <ion-label><h1>INTELLECT</h1></ion-label></div>
+  </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark" [routerLink]="['/login']">login</ion-button>
+    </ion-buttons>
+    <ion-label>Easy.Secure.Share</ion-label>
+    -->
+  
+  
+  
+<form id="form" >
+
+    <ion-input placeholder="Username" type="text"  [(ngModel)]="reguser.name" name="regname"></ion-input>
+
+    
+    <ion-input placeholder="Email" type="text"  [(ngModel)]="reguser.email" name="regmail"></ion-input>
+ 
+    <ion-input  placeholder="Age"  type="number"  [(ngModel)]="reguser.age" name="regage"></ion-input>
+ 
+
+
+    <ion-input  placeholder="Password"  type="password"  [(ngModel)]="reguser.password" name="regpassword"></ion-input>
+ 
+
+  <ion-button  expand="block" shape="round" color="dark" (click)="register()">Register</ion-button>
+</form>
+
+
+
+</ion-content>

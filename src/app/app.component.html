@@ -1,3 +1,28 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Intellect</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list id="menucss">
+      <ion-item><ion-icon name="time-outline"></ion-icon>
+        <ion-label>Recent</ion-label></ion-item>
+
+      <ion-item><ion-icon name="cloud-offline-outline"></ion-icon>
+        <ion-label>Offline</ion-label></ion-item>
+
+      <ion-item><ion-icon name="trash-outline"></ion-icon>
+        <ion-label>Bin</ion-label></ion-item>
+
+      <ion-item><ion-icon name="settings-outline"></ion-icon>
+        <ion-label>Settings</ion-label></ion-item>
+
+      <ion-item><ion-icon name="help-circle-outline"></ion-icon>
+        <ion-label>Help and Feedback</ion-label></ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<ion-router-outlet id="maino"></ion-router-outlet>

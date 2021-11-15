@@ -1,0 +1,30 @@
+
+  <ion-toolbar>
+   <ion-title id="header">INTELLECT</ion-title>
+   <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  </ion-toolbar>
+  
+
+
+<ion-content>
+  <!-- <ion-item><ion-button [routerLink]="['/main']"><ion-icon name="menu"></ion-icon></ion-button> -->
+
+  <ion-item>Name<ion-icon name="arrow-down-sharp"></ion-icon>
+  </ion-item>  
+  <div>
+    
+        <ion-input type="file" id="file" 
+            (change)="getFileDetails($event)"></ion-input>
+
+       
+   
+</div>
+
+<div *ngFor="let file of myFiles" >
+  <div class="folder"><ion-icon name="folder-open-sharp"></ion-icon>{{file.name}} - {{file.type}}</div>
+</div>
+
+
+</ion-content>,
